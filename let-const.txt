@@ -1,0 +1,33 @@
+const PI = 3.14;
+PI = 42; // Uncaught TypeError: Assignment to constant variable.
+
+
+What is the difference between var and let?
+
+You can redeclare and reassign values with var.
+Let can be reassigned but not redeclared (unlike var).
+When defined in a function, the var keyword scopes a variable to that function.
+The let keyword creates a block-scoped variable: a variable that only exists inside a code block (any pair of curly braces outside of object syntax).
+Var will hoist to the top of the scope it is defined in but let do not!
+
+
+What is the difference between var and const?
+
+You can redeclare and reassign values with var.
+The const keyword prevents a variable from ever being reassigned or redeclared.
+When defined in a function, the var keyword scopes a variable to that function.
+Const is also block-scoped, like let.
+Var will hoist to the top of the scope it is defined in but const do not!
+
+
+What is the difference between let and const?
+
+Let can be reassigned but not redeclared.
+The const keyword prevents a variable from ever being reassigned or redeclared.
+
+
+What is hoisting?
+
+The way JavaScript is structured can lead to variable hoisting, where variables are used before they are declared.
+Var will hoist to the top of the scope it is defined in.
+Function declarations are also hoisted and can be invoked “before” they are defined in a codebase.
